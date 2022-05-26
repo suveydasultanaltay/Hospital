@@ -30,18 +30,19 @@ namespace Proje_Hastane
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblAdSoyad = new System.Windows.Forms.Label();
-            this.lblTC = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblTC = new System.Windows.Forms.Label();
+            this.lblAdSoyad = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rchSikayet = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.rchSikayet = new System.Windows.Forms.RichTextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.btnCikis = new System.Windows.Forms.Button();
-            this.btnDuyurular = new System.Windows.Forms.Button();
             this.btnGuncelle = new System.Windows.Forms.Button();
+            this.btnDuyurular = new System.Windows.Forms.Button();
+            this.btnCikis = new System.Windows.Forms.Button();
+            this.btnInternet = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -63,41 +64,41 @@ namespace Proje_Hastane
             this.groupBox1.Text = "Doktor Bilgi";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // lblAdSoyad
+            // label1
             // 
-            this.lblAdSoyad.AutoSize = true;
-            this.lblAdSoyad.Location = new System.Drawing.Point(104, 67);
-            this.lblAdSoyad.Name = "lblAdSoyad";
-            this.lblAdSoyad.Size = new System.Drawing.Size(100, 29);
-            this.lblAdSoyad.TabIndex = 3;
-            this.lblAdSoyad.Text = "Null Null";
-            // 
-            // lblTC
-            // 
-            this.lblTC.AutoSize = true;
-            this.lblTC.Location = new System.Drawing.Point(104, 31);
-            this.lblTC.Name = "lblTC";
-            this.lblTC.Size = new System.Drawing.Size(145, 29);
-            this.lblTC.TabIndex = 2;
-            this.lblTC.Text = "00000000000";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(40, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 23);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "TC No:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(15, 67);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 29);
+            this.label2.Size = new System.Drawing.Size(89, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Ad Soyad:";
             // 
-            // label1
+            // lblTC
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "TC No:";
+            this.lblTC.AutoSize = true;
+            this.lblTC.Location = new System.Drawing.Point(104, 31);
+            this.lblTC.Name = "lblTC";
+            this.lblTC.Size = new System.Drawing.Size(120, 23);
+            this.lblTC.TabIndex = 2;
+            this.lblTC.Text = "00000000000";
+            // 
+            // lblAdSoyad
+            // 
+            this.lblAdSoyad.AutoSize = true;
+            this.lblAdSoyad.Location = new System.Drawing.Point(104, 67);
+            this.lblAdSoyad.Name = "lblAdSoyad";
+            this.lblAdSoyad.Size = new System.Drawing.Size(76, 23);
+            this.lblAdSoyad.TabIndex = 3;
+            this.lblAdSoyad.Text = "Null Null";
             // 
             // groupBox2
             // 
@@ -108,14 +109,6 @@ namespace Proje_Hastane
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Randevu Detay";
-            // 
-            // rchSikayet
-            // 
-            this.rchSikayet.Location = new System.Drawing.Point(6, 30);
-            this.rchSikayet.Name = "rchSikayet";
-            this.rchSikayet.Size = new System.Drawing.Size(307, 184);
-            this.rchSikayet.TabIndex = 5;
-            this.rchSikayet.Text = "";
             // 
             // groupBox3
             // 
@@ -131,14 +124,22 @@ namespace Proje_Hastane
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 32);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 27);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(692, 468);
+            this.dataGridView1.Size = new System.Drawing.Size(692, 473);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // rchSikayet
+            // 
+            this.rchSikayet.Location = new System.Drawing.Point(6, 30);
+            this.rchSikayet.Name = "rchSikayet";
+            this.rchSikayet.Size = new System.Drawing.Size(307, 184);
+            this.rchSikayet.TabIndex = 5;
+            this.rchSikayet.Text = "";
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.btnInternet);
             this.groupBox4.Controls.Add(this.btnCikis);
             this.groupBox4.Controls.Add(this.btnDuyurular);
             this.groupBox4.Controls.Add(this.btnGuncelle);
@@ -149,14 +150,14 @@ namespace Proje_Hastane
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "groupBox4";
             // 
-            // btnCikis
+            // btnGuncelle
             // 
-            this.btnCikis.Location = new System.Drawing.Point(6, 70);
-            this.btnCikis.Name = "btnCikis";
-            this.btnCikis.Size = new System.Drawing.Size(258, 34);
-            this.btnCikis.TabIndex = 2;
-            this.btnCikis.Text = "Çıkış";
-            this.btnCikis.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Location = new System.Drawing.Point(6, 30);
+            this.btnGuncelle.Name = "btnGuncelle";
+            this.btnGuncelle.Size = new System.Drawing.Size(121, 34);
+            this.btnGuncelle.TabIndex = 0;
+            this.btnGuncelle.Text = "Bilgi Düzenle";
+            this.btnGuncelle.UseVisualStyleBackColor = true;
             // 
             // btnDuyurular
             // 
@@ -167,18 +168,27 @@ namespace Proje_Hastane
             this.btnDuyurular.Text = "Duyurular";
             this.btnDuyurular.UseVisualStyleBackColor = true;
             // 
-            // btnGuncelle
+            // btnCikis
             // 
-            this.btnGuncelle.Location = new System.Drawing.Point(6, 30);
-            this.btnGuncelle.Name = "btnGuncelle";
-            this.btnGuncelle.Size = new System.Drawing.Size(121, 34);
-            this.btnGuncelle.TabIndex = 0;
-            this.btnGuncelle.Text = "Bilgi Düzenle";
-            this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnCikis.Location = new System.Drawing.Point(143, 70);
+            this.btnCikis.Name = "btnCikis";
+            this.btnCikis.Size = new System.Drawing.Size(121, 34);
+            this.btnCikis.TabIndex = 2;
+            this.btnCikis.Text = "Çıkış";
+            this.btnCikis.UseVisualStyleBackColor = true;
+            // 
+            // btnInternet
+            // 
+            this.btnInternet.Location = new System.Drawing.Point(6, 70);
+            this.btnInternet.Name = "btnInternet";
+            this.btnInternet.Size = new System.Drawing.Size(121, 34);
+            this.btnInternet.TabIndex = 3;
+            this.btnInternet.Text = "İnternet";
+            this.btnInternet.UseVisualStyleBackColor = true;
             // 
             // FrmDoktorDetay
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(1058, 513);
@@ -187,7 +197,7 @@ namespace Proje_Hastane
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "FrmDoktorDetay";
             this.Text = "FrmDoktorDetay";
             this.groupBox1.ResumeLayout(false);
@@ -212,6 +222,7 @@ namespace Proje_Hastane
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.RichTextBox rchSikayet;
         private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button btnInternet;
         private System.Windows.Forms.Button btnCikis;
         private System.Windows.Forms.Button btnDuyurular;
         private System.Windows.Forms.Button btnGuncelle;
